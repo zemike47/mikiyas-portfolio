@@ -1,75 +1,176 @@
-# React + TypeScript + Vite
+# Mikiyas Alemayehu — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for **Mikiyas Alemayehu Gebrewold**, a Software Engineer focused on backend engineering, cloud infrastructure, and full-stack development.
 
-Currently, two official plugins are available:
+🌐 **Live:** https://mikiyas-portfolio-iota.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React 19**
+* **TypeScript**
+* **Vite**
+* **Tailwind CSS v4**
+* **GSAP**
+* **Vercel**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Responsive portfolio design
+* Dark engineering-focused UI
+* Responsive navigation with mobile menu
+* Animated hero section
+* GSAP scroll animations
+* About section
+* Technical skills
+* Featured projects
+* Professional experience
+* Education
+* Certifications
+* Contact section
+* GitHub and LinkedIn links
+* Custom favicon and metadata
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Sections
 
+### Hero
+
+Introduces my role and engineering focus with a minimal, typography-driven layout.
+
+### About
+
+A short overview of my engineering background, interests, and problem-solving focus.
+
+### Skills
+
+Technical skills organized into:
+
+* Programming
+* Frameworks
+* Cloud & DevOps
+* Tools & Systems
+
+### Projects
+
+Showcases selected engineering projects with their technologies, architecture, and engineering results.
+
+### Experience
+
+Highlights professional software engineering and technical leadership experience.
+
+### Education
+
+Displays my academic and technical education.
+
+### Certifications
+
+Displays my AWS certifications.
+
+### Contact
+
+Provides direct links to email, GitHub, and LinkedIn.
+
+---
+
+## Project Structure
+
+```text
+mikiyas-portfolio/
+├── public/
+│   ├── favicon.svg
+│   └── icons.svg
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── About.tsx
+│   │   ├── Certifications.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Education.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── ProjectCard.tsx
+│   │   ├── Projects.tsx
+│   │   ├── SectionHeading.tsx
+│   │   └── Skills.tsx
+│   ├── data/
+│   │   └── portfolio.ts
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Local Development
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository:
 
+```bash
+git clone https://github.com/zemike47/mikiyas-portfolio.git
+cd mikiyas-portfolio
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Deployment
+
+The website is deployed on **Vercel**.
+
+Every production deployment is built from the Vite project using:
+
+```bash
+npm run build
+```
+
+Vite generates the production output in:
+
+```text
+dist/
+```
+
+---
+
+## Author
+
+**Mikiyas Alemayehu Gebrewold**
+
+Software Engineer
+
+* GitHub: https://github.com/zemike47
+* LinkedIn: https://www.linkedin.com/in/mikiyasalemayehu/
+* Email: [mikiyasalemayehu35@gmail.com](mailto:mikiyasalemayehu35@gmail.com)
